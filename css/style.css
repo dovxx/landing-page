@@ -4,6 +4,8 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    justify-content: space-between;
 }
 
 ul {
@@ -94,14 +96,14 @@ a {
 
 .info h1 {
     font-size: 36px;
-    font-weight: 900;
+    font-weight: 800;
     color: #1f2937;
     text-align: center;
 }
 
 .info h2 {
     color: #1f2937;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .cards-container {
@@ -113,7 +115,7 @@ a {
 .card {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-self: center;
     width: 300px;
     height: 300px;
@@ -123,6 +125,39 @@ a {
     text-align: center;
 }
 
+.card img {
+    width: 300px;
+}
+
+.quote-container {
+    background: #e5e7eb;
+    display: flex;
+}
+
+.quote-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 200px 250px;
+    color: #1f2937;
+    flex: auto;
+}
+
+.quote-text h1 {
+    font-size: 36px;
+    font-weight: 100;
+    font-style: italic;
+    padding: 0;
+    margin: 0;
+}
+
+.quote-text h2 {
+    padding: 0;
+    margin: 0;
+    align-self: flex-end;
+}
+
 
 .footer {
     display: flex;
@@ -130,4 +165,5 @@ a {
     align-items: center;
     background: #1f2937;
     height: 100px;
+    justify-self: flex-end;
 }
